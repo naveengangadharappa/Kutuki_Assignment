@@ -1,0 +1,402 @@
+[
+	{
+		"id": 1,
+		"property_id": 5,
+		"start_time": "11:00",
+		"duration": 45,
+		"day_of_week": 0,
+		"status": "BLOCKED",
+		"realtor_id": 1,
+		"tenent_id": 2
+	},
+	{
+		"id": 2,
+		"property_id": 8,
+		"start_time": "14:00",
+		"duration": 60,
+		"day_of_week": 1,
+		"status": "BLOCKED",
+		"realtor_id": 1,
+		"tenent_id": 4
+	},
+	{
+		"id": 3,
+		"property_id": 7,
+		"start_time": "14:00",
+		"duration": 45,
+		"day_of_week": 2,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 4,
+		"property_id": 9,
+		"start_time": "16:00",
+		"duration": 60,
+		"day_of_week": 3,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 5,
+		"property_id": 4,
+		"start_time": "14:00",
+		"duration": 45,
+		"day_of_week": 4,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 6,
+		"property_id": 5,
+		"start_time": "12:00",
+		"duration": 60,
+		"day_of_week": 5,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 7,
+		"property_id": 3,
+		"start_time": "12:00",
+		"duration": 45,
+		"day_of_week": 6,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 8,
+		"property_id": 2,
+		"start_time": "18:00",
+		"duration": 60,
+		"day_of_week": 0,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 9,
+		"property_id": 1,
+		"start_time": "14:00",
+		"duration": 45,
+		"day_of_week": 1,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 10,
+		"property_id": 1,
+		"start_time": "16:00",
+		"duration": 60,
+		"day_of_week": 2,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 11,
+		"property_id": 10,
+		"start_time": "15:00",
+		"duration": 45,
+		"day_of_week": 3,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 12,
+		"property_id": 4,
+		"start_time": "20:00",
+		"duration": 60,
+		"day_of_week": 4,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 13,
+		"property_id": 2,
+		"start_time": "17:00",
+		"duration": 45,
+		"day_of_week": 5,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 14,
+		"property_id": 9,
+		"start_time": "12:00",
+		"duration": 60,
+		"day_of_week": 6,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 15,
+		"property_id": 10,
+		"start_time": "19:00",
+		"duration": 45,
+		"day_of_week": 0,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 16,
+		"property_id": 6,
+		"start_time": "20:00",
+		"duration": 60,
+		"day_of_week": 1,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 17,
+		"property_id": 10,
+		"start_time": "20:00",
+		"duration": 45,
+		"day_of_week": 2,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 18,
+		"property_id": 2,
+		"start_time": "20:00",
+		"duration": 60,
+		"day_of_week": 3,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 19,
+		"property_id": 5,
+		"start_time": "20:00",
+		"duration": 45,
+		"day_of_week": 4,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 20,
+		"property_id": 7,
+		"start_time": "15:00",
+		"duration": 60,
+		"day_of_week": 5,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 21,
+		"property_id": 5,
+		"start_time": "11:00",
+		"duration": 45,
+		"day_of_week": 6,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 22,
+		"property_id": 10,
+		"start_time": "15:00",
+		"duration": 60,
+		"day_of_week": 0,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 23,
+		"property_id": 6,
+		"start_time": "15:00",
+		"duration": 45,
+		"day_of_week": 1,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 24,
+		"property_id": 3,
+		"start_time": "16:00",
+		"duration": 60,
+		"day_of_week": 2,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 25,
+		"property_id": 2,
+		"start_time": "20:00",
+		"duration": 45,
+		"day_of_week": 3,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 26,
+		"property_id": 9,
+		"start_time": "11:00",
+		"duration": 60,
+		"day_of_week": 4,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 27,
+		"property_id": 4,
+		"start_time": "11:00",
+		"duration": 45,
+		"day_of_week": 5,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 28,
+		"property_id": 3,
+		"start_time": "15:00",
+		"duration": 60,
+		"day_of_week": 6,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 29,
+		"property_id": 1,
+		"start_time": "10:00",
+		"duration": 45,
+		"day_of_week": 0,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 30,
+		"property_id": 1,
+		"start_time": "12:00",
+		"duration": 60,
+		"day_of_week": 1,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 31,
+		"property_id": 1,
+		"start_time": "19:00",
+		"duration": 45,
+		"day_of_week": 2,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 32,
+		"property_id": 2,
+		"start_time": "13:00",
+		"duration": 60,
+		"day_of_week": 3,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 33,
+		"property_id": 3,
+		"start_time": "10:00",
+		"duration": 45,
+		"day_of_week": 4,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 34,
+		"property_id": 8,
+		"start_time": "18:00",
+		"duration": 60,
+		"day_of_week": 5,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 35,
+		"property_id": 4,
+		"start_time": "12:00",
+		"duration": 45,
+		"day_of_week": 6,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 36,
+		"property_id": 4,
+		"start_time": "20:00",
+		"duration": 60,
+		"day_of_week": 0,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 37,
+		"property_id": 8,
+		"start_time": "13:00",
+		"duration": 45,
+		"day_of_week": 1,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 38,
+		"property_id": 6,
+		"start_time": "11:00",
+		"duration": 60,
+		"day_of_week": 2,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 39,
+		"property_id": 10,
+		"start_time": "20:00",
+		"duration": 45,
+		"day_of_week": 3,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	},
+	{
+		"id": 40,
+		"property_id": 1,
+		"start_time": "12:00",
+		"duration": 60,
+		"day_of_week": 4,
+		"status": "AVAILABLE",
+		"realtor_id": null,
+		"tenent_id": null
+	}
+]
