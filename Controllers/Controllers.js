@@ -26,7 +26,6 @@ const Get_House_List = async (req_data) => {
     try {
         let house_list_result = {};
         let filter = req_data.filter ? req_data.filter : '';
-        console.log("Filter = " + filter);
         switch (filter) {
             case "id":
                 house_list_result = { status: true, data: houses_model.filter(data => data.id == req_data.id) };
@@ -49,7 +48,6 @@ const Get_Available_Timeslot = async (req_data) => {
     try {
         let Timeslots_result = {};
         let filter = req_data.filter ? req_data.filter : '';
-        console.log("Filter = " + filter);
         switch (filter) {
             case "id":
                 if (req_data.id) Timeslots_result = { status: true, data: houses_visit_availability_model.filter(data => (data.status == "AVAILABLE" && !data.realtor_id && data.id == req_data.id)) };

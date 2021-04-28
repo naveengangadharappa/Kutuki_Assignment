@@ -2,9 +2,15 @@ const express = require('express');
 const router = express.Router();
 const validationschema = require('../Validations/Validations');
 const Controllers = require('../Controllers/Controllers')
+const Log_Controllers = require('../Controllers/Log_Controllers')
+const { ErrorHandler } = require('../Errors/errors');
 
 let Rout_model_error = require('../Logs/Routs_Error_Logs.json')
-let Log_Controllers = require('../Controllers/Log_Controllers')
+
+
+router.get('/', (req, res) => {
+    res.json({ message: "Connected to Node Api server for Kutuki Assignment. " });
+})
 
 router.post('/List_houses', async (req, res) => {
     try {
@@ -35,6 +41,7 @@ router.post('/Get_Time_Slots', async (req, res) => {
         console.log(err);
         error_result = await Log_Controllers.LogError('myId', err, './Logs/Routs_Error_Logs.json', Rout_model_error, 'json')
         res.json({ status: false, message: 'Internal error request cannot be completed' })
+        //throw new ErrorHandler(404, 'Internal error request cannot be completed');
     }
 })
 
@@ -51,6 +58,7 @@ router.post('/Book_visit', async (req, res) => {
         console.log(err);
         error_result = await Log_Controllers.LogError('myId', err, './Logs/Routs_Error_Logs.json', Rout_model_error, 'json')
         res.json({ status: false, message: 'Internal error request cannot be completed' })
+        //throw new ErrorHandler(404, 'Internal error request cannot be completed');
     }
 })
 

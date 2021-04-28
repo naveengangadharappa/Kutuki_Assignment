@@ -1,0 +1,95 @@
+{
+  "login": {
+    "employee_success":{
+      "body":{
+          "type":"employee",
+          "employeeid":"Esds001629",
+          "password":"1234567890"
+        }
+    },
+    "employee_failure":{
+      "body":{
+          "type":"employee",
+          "employeeid":"Esds001631",
+          "password":"navee123"
+      }
+    },
+    "employee_validation":{
+      "body":{
+          "type":"employee",
+          "employeeid":"Esds001631",
+          "password":"navee123"
+        }
+    }
+  },
+  "login_status":{
+    "employee_success":{
+      "body":{
+          "type":"employee",
+          "employeeid":"Esds001631"
+        }
+    },
+    "employee_failure":{
+      "body":{
+          "type":"employee",
+          "employeeid":"Esds001631"
+      }
+    },
+    "employee_validation":{
+      "body":{
+          "type":"employee",
+          "employeeid":"Esds001631"
+        }
+    }
+  },
+  "logout": {
+    "employee_success":{
+      "body":{
+          "type":"employee",
+          "employeeid":"Esds001631"
+        }
+    },
+    "employee_failure":{
+      "body":{
+          "type":"employee",
+          "employeeid":"Esds001631"
+      }
+    },
+    "employee_validation":{
+      "body":{
+          "type":"employee",
+          "employeeid":"Esds001631"
+        }
+    }
+  },
+  "Employee": {
+    "data":{
+      "body":{
+        "action":"fetchdata",
+        "filter":"id",
+        "employeeid":"Esds001631"
+      }
+    }
+  },
+  "Master": {
+
+  },
+  "Level": {
+
+  },
+  "sublevel": {
+
+  },
+  "Question": {
+
+  },
+  "Options":{
+
+  },
+  "Hint":{
+
+  },
+  "Answer":{
+
+  }
+} 

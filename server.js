@@ -1,11 +1,11 @@
-
 const express = require('express');
-//const session = require('express-session');
 const compression = require('compression');
-const helmet = require('helmet');
-const routs = require('./Routs/Routs');
 const cors = require('cors');
 const bodyparser = require('body-parser');
+const helmet = require('helmet');
+const routs = require('./Routs/Routs');
+const { handleError } = require('./Errors/errors');
+
 
 var app = express();
 app.use(bodyparser.json());
@@ -27,7 +27,7 @@ app.use(compression({
     filter: shouldCompress,
     threshold: 0
 }));
-//app.enable('trust proxy');
+
 app.use(helmet());
 
 app.use(cors({
@@ -37,8 +37,9 @@ app.use(cors({
     exposedHeaders: ['set-cookie']
 }))
 
-// let expiryDate = new Date(Date.now() + 60 * 60 * 1000) // 1 hour
-// app.use(session({ secret: 'ssshhhhh' }));
+// app.use((err, req, res, next) => {   //middle ware to handle Error 
+//     handleError(err, res);
+// });
 
 app.use('/Assignment', routs);
 
