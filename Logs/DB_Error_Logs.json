@@ -9,6 +9,86 @@
 			"DateTime": "Date: 2021-3-28 Time:  2 : 10 : 34",
 			"UserId": "myId",
 			"Errormsg": "TypeError: available_realtor[0] is not iterable"
+		},
+		{
+			"DateTime": "Date: 2021-3-28 Time:  22 : 56 : 12",
+			"UserId": "myId",
+			"Errormsg": "Error: ER_DUP_ENTRY: Duplicate entry '4' for key 'PRIMARY'"
+		},
+		{
+			"DateTime": "Date: 2021-3-28 Time:  23 : 6 : 35",
+			"UserId": "myId",
+			"Errormsg": "Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`kutuki`.`houses`, CONSTRAINT `houses_ibfk_1` FOREIGN KEY (`owner_id`) REFERENCES `owners` (`id`))"
+		},
+		{
+			"DateTime": "Date: 2021-3-28 Time:  23 : 8 : 49",
+			"UserId": "myId",
+			"Errormsg": "Error: ER_BAD_NULL_ERROR: Column 'tenent_id' cannot be null"
+		},
+		{
+			"DateTime": "Date: 2021-3-28 Time:  23 : 8 : 49",
+			"UserId": "myId",
+			"Errormsg": "Error: ER_BAD_NULL_ERROR: Column 'tenent_id' cannot be null"
+		},
+		{
+			"DateTime": "Date: 2021-3-28 Time:  23 : 16 : 52",
+			"UserId": "myId",
+			"Errormsg": "Error: ER_BAD_NULL_ERROR: Column 'tenent_id' cannot be null"
+		},
+		{
+			"DateTime": "Date: 2021-3-28 Time:  23 : 16 : 52",
+			"UserId": "myId",
+			"Errormsg": "Error: ER_BAD_NULL_ERROR: Column 'tenent_id' cannot be null"
+		},
+		{
+			"DateTime": "Date: 2021-3-28 Time:  23 : 16 : 52",
+			"UserId": "myId",
+			"Errormsg": "Error: ER_BAD_NULL_ERROR: Column 'tenent_id' cannot be null"
+		},
+		{
+			"DateTime": "Date: 2021-3-28 Time:  23 : 16 : 52",
+			"UserId": "myId",
+			"Errormsg": "Error: ER_BAD_NULL_ERROR: Column 'tenent_id' cannot be null"
+		},
+		{
+			"DateTime": "Date: 2021-3-28 Time:  23 : 33 : 51",
+			"UserId": "myId",
+			"Errormsg": "Error: ER_BAD_NULL_ERROR: Column 'tenent_id' cannot be null"
+		},
+		{
+			"DateTime": "Date: 2021-3-28 Time:  23 : 36 : 22",
+			"UserId": "myId",
+			"Errormsg": "Error: ER_BAD_NULL_ERROR: Column 'tenent_id' cannot be null"
+		},
+		{
+			"DateTime": "Date: 2021-3-28 Time:  23 : 39 : 56",
+			"UserId": "myId",
+			"Errormsg": "Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`kutuki`.`visit_availability`, CONSTRAINT `visit_availability_ibfk_3` FOREIGN KEY (`property_id`) REFERENCES `houses` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)"
+		},
+		{
+			"DateTime": "Date: 2021-3-28 Time:  23 : 39 : 56",
+			"UserId": "myId",
+			"Errormsg": "Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`kutuki`.`visit_availability`, CONSTRAINT `visit_availability_ibfk_3` FOREIGN KEY (`property_id`) REFERENCES `houses` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)"
+		},
+		{
+			"DateTime": "Date: 2021-3-29 Time:  2 : 43 : 7",
+			"UserId": "myId",
+			"Errormsg": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%'j'%' at line 1"
+		},
+		{
+			"DateTime": "Date: 2021-3-29 Time:  2 : 44 : 33",
+			"UserId": "myId",
+			"Errormsg": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'j'%'' at line 1"
+		},
+		{
+			"DateTime": "Date: 2021-3-29 Time:  2 : 50 : 44",
+			"UserId": "myId",
+			"Errormsg": "Error: ER_EMPTY_QUERY: Query was empty"
+		},
+		{
+			"DateTime": "Date: 2021-3-29 Time:  2 : 55 : 39",
+			"UserId": "myId",
+			"Errormsg": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'VALUES (?,?,?)' at line 1"
 		}
 	]
 }

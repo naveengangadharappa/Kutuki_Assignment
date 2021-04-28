@@ -1,9 +1,13 @@
+require('./DB/Mysql_connect');
 const express = require('express');
 const compression = require('compression');
 const cors = require('cors');
 const bodyparser = require('body-parser');
 const helmet = require('helmet');
 const routs = require('./Routs/Routs');
+const dotenv = require('dotenv');
+dotenv.config();
+
 const { handleError } = require('./Errors/errors');
 
 
@@ -42,5 +46,5 @@ app.use(cors({
 // });
 
 app.use('/Assignment', routs);
-
-app.listen(3000, () => { console.log('Express server started and listening on port 3000') });
+let port = process.env.PORT || 3001;
+app.listen(port, () => { console.log(`Express server started and listening on port ${port}`) });

@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const validationschema = require('../Validations/Validations');
 const Controllers = require('../Controllers/Controllers')
+const DB_Controllers = require('../Controllers/DB_Controllers')
 const Log_Controllers = require('../Controllers/Log_Controllers')
 const { ErrorHandler } = require('../Errors/errors');
 
@@ -16,7 +17,8 @@ router.post('/List_houses', async (req, res) => {
     try {
         let validation_result = await validationschema.validatedata(req.body, 'List_houses')
         if (validation_result.status) {
-            let result = await Controllers.Get_House_List(req.body);
+            // let result = await Controllers.Get_House_List(req.body);
+            let result = await DB_Controllers.Get_House_List(req.body);
             res.json(result);
         } else {
             res.json(validation_result);
@@ -32,7 +34,8 @@ router.post('/Get_Time_Slots', async (req, res) => {
     try {
         let validation_result = await validationschema.validatedata(req.body, 'Get_Time_Slots')
         if (validation_result.status) {
-            let result = await Controllers.Get_Available_Timeslot(req.body);
+            // let result = await Controllers.Get_Available_Timeslot(req.body);
+            let result = await DB_Controllers.Get_Available_Timeslot(req.body);
             res.json(result);
         } else {
             res.json(validation_result);
@@ -49,7 +52,8 @@ router.post('/Book_visit', async (req, res) => {
     try {
         let validation_result = await validationschema.validatedata(req.body, 'Book_visit')
         if (validation_result.status) {
-            let result = await Controllers.Book_Timeslot(req.body);
+            // let result = await Controllers.Book_Timeslot(req.body);
+            let result = await DB_Controllers.Book_Timeslot(req.body);
             res.json(result);
         } else {
             res.json(validation_result);
@@ -59,6 +63,15 @@ router.post('/Book_visit', async (req, res) => {
         error_result = await Log_Controllers.LogError('myId', err, './Logs/Routs_Error_Logs.json', Rout_model_error, 'json')
         res.json({ status: false, message: 'Internal error request cannot be completed' })
         //throw new ErrorHandler(404, 'Internal error request cannot be completed');
+    }
+})
+
+router.post('/seed_data', async (req, res) => {
+    try {
+        let result = await DB_Controllers.Seed_Data();
+        res.json(result);
+    } catch (err) {
+        console.log(err);
     }
 })
 

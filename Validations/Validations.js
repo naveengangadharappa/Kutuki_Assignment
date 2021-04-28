@@ -4,21 +4,21 @@ let Validation_error = require('../Logs/Validation_Error_Logs.json')
 let Log_Controllers = require('../Controllers/Log_Controllers')
 
 const List_houses = {
-    id: 'string',
+    id: 'numeric',
     title: 'string',
 };
 
 const Get_Time_Slots = {
-    id: 'alpha_num',
-    property_id: 'alpha_num',
-    realtor_id: 'alpha_num'
+    id: 'numeric',
+    property_id: 'numeric',
+    realtor_id: 'numeric'
 };
 
 const Book_visit = {
     id: 'required|alpha_num',
     name: 'required|string|max:50',
     email: 'required|email',
-    phone: 'required|string'
+    phone: 'required|numeric|min:1000000000|max:999999999999999'
 };
 
 const validatedata = async (body, option) => {
