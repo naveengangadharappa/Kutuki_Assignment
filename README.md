@@ -1,10 +1,17 @@
 "# Kutuki_Assignment"
 
----------------- No Database Used because(to easy deployment and installtion process) -----------------
-
 Data Storage
+1)Mysql Database: (Primary)
+To use Database as storage open .env file and update Datastorage=DB
+2)JSON files are used for Data Storage : (optional/Secondary)
+To use Json FIle as storage open .env file and update Datastorage=json
 
-    JSON files are used for Data Storage
+DataBase Configuration :
+
+1. Install Xampp server or any other mysql Server.
+2. create Database with name: kutuki.
+3. Navigate to project Root folder find DB_file in Kutuki_Assignment/DB_File/kutuki.sql and export to recently created database.
+4. Update DB_credentials in .env file.
 
 DepenDencies used:
 

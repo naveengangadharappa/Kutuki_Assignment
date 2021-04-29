@@ -6,6 +6,8 @@ const DB_Controllers = require('../Controllers/DB_Controllers')
 const Log_Controllers = require('../Controllers/Log_Controllers')
 const { ErrorHandler } = require('../Errors/errors');
 
+let Common_Controllers = process.env.Datastorage == 'DB' ? DB_Controllers : Controllers;
+
 let Rout_model_error = require('../Logs/Routs_Error_Logs.json')
 
 
@@ -18,7 +20,8 @@ router.post('/List_houses', async (req, res) => {
         let validation_result = await validationschema.validatedata(req.body, 'List_houses')
         if (validation_result.status) {
             // let result = await Controllers.Get_House_List(req.body);
-            let result = await DB_Controllers.Get_House_List(req.body);
+            //let result = await DB_Controllers.Get_House_List(req.body);
+            let result = await Common_Controllers.Get_House_List(req.body);
             res.json(result);
         } else {
             res.json(validation_result);
@@ -35,7 +38,8 @@ router.post('/Get_Time_Slots', async (req, res) => {
         let validation_result = await validationschema.validatedata(req.body, 'Get_Time_Slots')
         if (validation_result.status) {
             // let result = await Controllers.Get_Available_Timeslot(req.body);
-            let result = await DB_Controllers.Get_Available_Timeslot(req.body);
+            //let result = await DB_Controllers.Get_Available_Timeslot(req.body);
+            let result = await Common_Controllers.Get_Available_Timeslot(req.body);
             res.json(result);
         } else {
             res.json(validation_result);
@@ -53,7 +57,8 @@ router.post('/Book_visit', async (req, res) => {
         let validation_result = await validationschema.validatedata(req.body, 'Book_visit')
         if (validation_result.status) {
             // let result = await Controllers.Book_Timeslot(req.body);
-            let result = await DB_Controllers.Book_Timeslot(req.body);
+            //let result = await DB_Controllers.Book_Timeslot(req.body);
+            let result = await Common_Controllers.Book_Timeslot(req.body);
             res.json(result);
         } else {
             res.json(validation_result);
@@ -68,6 +73,7 @@ router.post('/Book_visit', async (req, res) => {
 
 router.post('/seed_data', async (req, res) => {
     try {
+        // for seeding Json data to MYSQL
         let result = await DB_Controllers.Seed_Data();
         res.json(result);
     } catch (err) {
