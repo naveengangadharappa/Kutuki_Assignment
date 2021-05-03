@@ -12,6 +12,15 @@ DataBase Configuration :
 2. create Database with name: kutuki.
 3. Navigate to project Root folder find DB_file in Kutuki_Assignment/DB_File/kutuki.sql and export to recently created database.
 4. Update DB_credentials in .env file.
+   NODE_ENV=development
+   Datastorage=DB            
+
+   PORT=3000                  // Port @ which server is running
+   MYSQL_HOST=*********       // Host name
+   MYSQL_DBNAME=kutuki        // DB name
+   MYSQL_USERNAME= *******    // Username
+   MYSQL_PASSWORD= *******    // Password
+
 
 DepenDencies used:
 
